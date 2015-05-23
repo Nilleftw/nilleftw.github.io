@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Clicker Heroes Upgrade List</title>
+</head>
+<body>
+
+    <div class="upgradeCircle"><p id="counter">0/28</p></div>
+
+    <p id="dps">100% DPS</p>
+
+<div>
+    <div class="container">
+        <h1>Clicker Heroes Upgrades</h1>
+    </div>
+    <div class="container">
+    <ul>
+        <li><span>Cid, the Helpful Adventurer</span>
+            <ul>Lvl 25: Clickstorm</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Ivan, the Drunken Brawler</span>
+            <ul>Lvl 75: Powersurge</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>The Wandering Fisherman</span>
+            <ul id="25dps">Lvl 75: 25% DPS</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Betty Clicker</span>
+            <ul id="20dps">Lvl 10: 20% DPS</ul>
+            <ul id="20dps">Lvl 25: 20% DPS</ul>
+            <ul id="20dps">Lvl 50: 20% DPS</ul>
+            <ul id="20dps">Lvl 75: 20% DPS</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Leon</span>
+            <ul id="25dps">Lvl 75: 25% DPS</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Alexa, Assassin</span>
+            <ul>Lvl 100: Lucky Strikes</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Broyle Lindeoven, Fire Mage</span>
+            <ul id="25dps">Lvl 10: 25% DPS</ul>
+            <ul>Lvl 100: Metal Detector</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>King Midas</span>
+            <ul>Lvl 10: 25% Gold</ul>
+            <ul>Lvl 25: 25% Gold</ul>
+            <ul>Lvl 50: 25% Gold</ul>
+            <ul>Lvl 75: 50% Gold</ul>
+            <ul>Lvl 100: Golden Clicks</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Abaddon</span>
+            <ul>Lvl 75: The Dark Ritual</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Amenhotep</span>
+            <ul id="20dps">Lvl 25: 20% DPS</ul>
+            <ul id="20dps">Lvl 50: 20% DPS</ul>
+            <ul>Lvl 150: Ascension</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Beastlord</span>
+            <ul id"10dps">Lvl 75: 10% DPS</ul>
+            <ul>Lvl 100: Super Clicks</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Aphrodite, Goddess of Love</span>
+            <ul>Lvl 100: Energize</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Shinatobe, Wind Deity</span>
+            <ul id="10dps">Lvl 25: 10% DPS</ul>
+            <ul>Lvl 100: Reload</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Grant, The General</span>
+            <ul id="25dps">Lvl 10: 25% DPS</ul>
+            <ul id="25dps">Lvl 50: 25% DPS</ul>
+        </li>
+
+    <div class="line"></div>
+
+        <li><span>Frostleaf</span>
+            <ul id="25dps">Lvl 50: 25% DPS</ul>
+        </li>
+    </ul>
+    </div>
+</div>
+
+    <!-- Hides upgrade when clicked on -->
+<script>
+    $(document).ready(function(){
+        $("ul li ul").click(function(){
+            $(this).slideUp();
+
+        });
+    })
+</script>
+
+    <!-- Adds one upgrade to the total of owned upgrades -->
+<script>
+    var upgrades = 0;
+
+    $(document).ready(function(){
+        $("ul li ul").click(function(){
+            upgrades++;
+            document.getElementById("counter").innerHTML = upgrades + "/28";
+        });
+    })
+</script>
+
+    <!-- Adds the upgraded DPS to your total DPS -->
+<script>
+    var dps = 100;
+
+    $(document).ready(function(){
+        $("ul li ul").click(function(){
+        var dpsAdd = parseInt($(this).attr('id'));
+            dps += dpsAdd;
+            document.getElementById("dps").innerHTML = dps + "% DPS";
+        })
+    })
+</script>
