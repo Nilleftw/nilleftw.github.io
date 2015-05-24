@@ -23,16 +23,29 @@ body {
   color: white;
 }
 
+.explainer {
+  position: relative;
+  top: 5em;
+  width: 360px;
+  margin: auto;
+}
+
+.explainer p {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0,0,0,0.5);
+}
+
 .content {
   position: relative;
-  top: 10em;
+  top: 5em;
   background: #FAFAFA;
   box-shadow: 0 1px 2px #9E9E9E;
   width: 450px;
   margin: auto;
   margin-bottom: 15em;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 ul {
@@ -42,14 +55,15 @@ ul {
 }
 
 ul li ul {
-  color: rgba(0,0,0,0.7);
+  position: relative;
+  font-weight: 400;
+  color: rgba(0,0,0,0.5);
   margin: 5px 5px 10px 5px;
 }
 
 ul li ul:hover {
   background: #E3F2FD;
-  color: black;
-  width: 50%;
+  width: 98%;
 }
 
 .line {
@@ -58,6 +72,8 @@ ul li ul:hover {
   left: -20px;
   height: 1px;
   width: 200%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .upgradeCircle {
@@ -107,9 +123,13 @@ footer {
   box-shadow: 0px 5px 5px #9E9E9E;
 }
 
-span {
+.contentTitle {
   font-weight: 500;
   font-size: 1.1em;
   color: #1976D2;
-  padding: 5px;
+}
+
+.pushRight {
+  position: absolute;
+  left: 18em;
 }

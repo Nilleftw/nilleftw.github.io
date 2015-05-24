@@ -2,9 +2,10 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script type='text/javascript' id='lt_ws' src='http://localhost:63701/socket.io/lighttable/ws.js'></script>
     <meta charset="UTF-8">
     <title>Clicker Heroes Upgrade List</title>
 </head>
@@ -16,107 +17,109 @@
     <h2>Clicker Heroes Upgrades</h2>
 </div>
 
-    <div class="content">
+    <div class="explainer"><p>Level<span class="pushRight">Upgrade</span></p></div>
+
+<div class="content">
     <ul>
-        <li><span>Cid, the Helpful Adventurer</span>
-            <ul>Level 25 - Clickstorm</ul>
+        <li><span class="contentTitle">Cid, the Helpful Adventurer</span>
+            <ul>25<span class="pushRight">Clickstorm</span></span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Ivan, the Drunken Brawler</span>
-            <ul>Level 75 - Powersurge</ul>
+        <li><span class="contentTitle">Ivan, the Drunken Brawler</span>
+            <ul>75<span class="pushRight">Powersurge</span></span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>The Wandering Fisherman</span>
-            <ul id="25dps">Level 75 - 25% DPS</ul>
+        <li><span class="contentTitle">The Wandering Fisherman</span>
+            <ul id="25dps">75<span class="pushRight">25% DPS</span></span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Betty Clicker</span>
-            <ul id="20dps">Level 10 - 20% DPS</ul>
-            <ul id="20dps">Level 25 - 20% DPS</ul>
-            <ul id="20dps">Level 50 - 20% DPS</ul>
-            <ul id="20dps">Level 75 - 20% DPS</ul>
+        <li><span class="contentTitle">Betty Clicker</span>
+            <ul id="20dps">10<span class="pushRight">20% DPS</span></ul>
+            <ul id="20dps">25<span class="pushRight">20% DPS</span></ul>
+            <ul id="20dps">50<span class="pushRight">20% DPS</span></ul>
+            <ul id="20dps">75<span class="pushRight">20% DPS</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Leon</span>
-            <ul id="25dps">Level 75 - 25% DPS</ul>
+        <li><span class="contentTitle">Leon</span>
+            <ul id="25dps">75<span class="pushRight">25% DPS</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Alexa, Assassin</span>
-            <ul>Level 100 - Lucky Strikes</ul>
+        <li><span class="contentTitle">Alexa, Assassin</span>
+            <ul>100<span class="pushRight">Lucky Strikes</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Broyle Lindeoven, Fire Mage</span>
-            <ul id="25dps">Level 10 - 25% DPS</ul>
-            <ul>Level 100 - Metal Detector</ul>
+        <li><span class="contentTitle">Broyle Lindeoven, Fire Mage</span>
+            <ul id="25dps">10<span class="pushRight">25% DPS</span></ul>
+            <ul>100<span class="pushRight">Metal Detector</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>King Midas</span>
-            <ul id="25gold">Level 10 - 25% Gold</ul>
-            <ul id="25gold">Level 25 - 25% Gold</ul>
-            <ul id="25gold">Level 50 - 25% Gold</ul>
-            <ul id="50gold">Level 75 - 50% Gold</ul>
-            <ul>Level 100 - Golden Clicks</ul>
+        <li><span class="contentTitle">King Midas</span>
+            <ul id="25gold">10<span class="pushRight">25% Gold</span></ul>
+            <ul id="25gold">25<span class="pushRight">25% Gold</span></ul>
+            <ul id="25gold">50<span class="pushRight">25% Gold</span></ul>
+            <ul id="50gold">75<span class="pushRight">50% Gold</span></ul>
+            <ul>100<span class="pushRight">Golden Clicks</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Abaddon</span>
-            <ul>Level 75 - The Dark Ritual</ul>
+        <li><span class="contentTitle">Abaddon</span>
+            <ul>75<span class="pushRight">The Dark Ritual</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Amenhotep</span>
-            <ul id="20dps">Level 25 - 20% DPS</ul>
-            <ul id="20dps">Level 50 - 20% DPS</ul>
-            <ul>Level 150 - Ascension</ul>
+        <li><span class="contentTitle">Amenhotep</span>
+            <ul id="20dps">25<span class="pushRight">20% DPS</span></ul>
+            <ul id="20dps">50<span class="pushRight">20% DPS</span></ul>
+            <ul>150<span class="pushRight">Ascension</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Beastlord</span>
-            <ul id"10dps">Level 75 - 10% DPS</ul>
-            <ul>Level 100 - Super Clicks</ul>
+        <li><span class="contentTitle">Beastlord</span>
+            <ul id"10dps">75<span class="pushRight">10% DPS</span></ul>
+            <ul>100<span class="pushRight">Super Clicks</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Aphrodite, Goddess of Love</span>
-            <ul>Level 100 - Energize</ul>
+        <li><span class="contentTitle">Aphrodite, Goddess of Love</span>
+            <ul>100<span class="pushRight">Energize</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Shinatobe, Wind Deity</span>
-            <ul id="10dps">Level 25 - 10% DPS</ul>
-            <ul>Level 100 - Reload</ul>
+        <li><span class="contentTitle">Shinatobe, Wind Deity</span>
+            <ul id="10dps">25<span class="pushRight">10% DPS</span></ul>
+            <ul>100<span class="pushRight">Reload</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Grant, The General</span>
-            <ul id="25dps">Level 10 - 25% DPS</ul>
-            <ul id="25dps">Level 50 - 25% DPS</ul>
+        <li><span class="contentTitle">Grant, The General</span>
+            <ul id="25dps">10<span class="pushRight">25% DPS</span></ul>
+            <ul id="25dps">50<span class="pushRight">25% DPS</span></ul>
         </li>
 
         <div class="line"></div>
 
-        <li><span>Frostleaf</span>
-            <ul id="25dps">Level 50 - 25% DPS</ul>
+        <li><span class="contentTitle">Frostleaf</span>
+            <ul id="25dps">50<span class="pushRight">25% DPS</span></span></ul>
         </li>
     </ul>
 </div>
