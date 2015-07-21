@@ -1,0 +1,283 @@
+html, body { width: 100%; height: 100%; margin: 0 auto; text-align: left;
+	background: #ccc; font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header*/
+
+.header {
+  height: 80px;
+  background: #1e1e1e;
+}
+
+.header img {
+  display: block;
+  position: relative;
+  height: 80px;
+  margin: auto;
+}
+
+/* Gamla headern
+#header {
+  background-image: url(http://i.imgur.com/5zE12Lf.png) ;
+  background-color: #1e1e1e;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 117px;
+  
+  margin: 0 auto;
+}   */
+
+
+/* Navigering */
+
+.nav {
+  font-family: 'Shift', sans-serif;
+  background: white;
+}
+
+.nav ul {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 20px;
+/*  font-weight: bold;*/
+  padding: 0px 10px;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  /*background: #B8B8B8;*/
+  border-bottom: solid #00b0ff;
+}
+
+
+
+/* Huvuddelen */
+
+#page {
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow:    0px 1px 5px 0px rgba(0, 0, 0, 1);
+  box-shadow:         0px 1px 5px 0px rgba(0, 0, 0, 1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#main {
+	margin: 0 auto;
+  background-color: #626262;
+	padding: 30px;
+  height: 600px;
+  max-height: 600px;
+}
+
+#main h2 {
+  color: #393c3d;
+  font-size: 24px;
+}
+
+#main p {
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+
+.rss {
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+.wowhead {
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.diablofans {
+  position: relative;
+  display: inline-block;
+  float: right;
+  
+}
+
+.overwatch {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+/*Kommentarer för PoE*/
+
+.poecomment {
+  position: relative;
+  display: block;
+  float: right;
+  left: 15px;
+  top: -202px;
+  width: 500px;
+  max-height: 625px;
+
+}
+
+#comment {
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow:    0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  box-shadow:         0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  overflow: auto;
+  max-height: 592px;
+}
+
+/*Egna inställningar på kommentarlådan*/
+
+#fcs_div_55aa423fee719 a {
+  color: #00b0ff;
+}
+
+#comment-rss-feed {
+  display: none;
+}
+
+#profile {
+  display: none;
+}
+
+#emotybutton55aa423fee719 > div {
+  display: none;
+}
+
+#comment-header > div:nth-child(8) {
+  display: none;
+}
+
+#fcs_div_55aa423fee719 {
+  padding: none;
+  background-image: none;
+}
+
+div.fcs_voting_container {
+  display: none;
+}
+
+#comment-body_55aa423fee719 {
+  background: white;
+}
+
+/*Förklaring under kommentarlådan*/
+
+#explain {
+  position: relative;
+  padding: 0px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#explain p {
+  font-size: 10px;
+  color: white;
+  padding: 2px;
+}
+
+/* Inställningar för knappar */
+
+/*.buttons ul {
+  color: green;
+}*/
+
+#main .container li{
+  position: relative;
+  left: -3.5em;
+  top: -2em;
+  display: block;
+  float: left;
+  clear: left;
+  color: white;
+  font-size: 0.918em;
+  padding: 0.750em;
+  margin-bottom: 3px;
+  width: 100px;
+/*  max-width: 100px;*/
+  text-transform: uppercase;
+-webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+-moz-box-shadow:    0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+box-shadow:         0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+#main .container li {
+  background: #E65C00;
+}
+
+#main .container li:hover {
+  background: #B84A00;
+}
+
+/* Nedre delen av sidan */
+
+#footer {
+  background-color: #1e1e1e;
+/*  margin: auto;*/
+  text-align: left;
+  padding-bottom: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+/*  max-height: 2px;*/
+}
+
+#footer h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00b0ff;
+  text-transform: uppercase;
+}
+
+#footer p {
+  font-family: 'Shift', sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+#footer a {
+  color: #00b0ff;
+}
+
+#about {
+  display: inline-block;
+  width: 400px;
+  position: absolute;
+  float: left;
+}
+
+#spacer {
+  display: inline-block;
+  width: 30%;
+  position: absolute;
+}
+
+#contact {
+  display: inline-block;
+  width: 300px;
+  position: absolute;
+  left: 60%;
+}
+
+/*#about {
+	width: 400px;
+	position: relative;
+	float: left;
+}
+
+#contact {
+  width: 400px;
+  position: relative;
+  float: right;
+}*/
