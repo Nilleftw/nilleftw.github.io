@@ -119,6 +119,16 @@ a {
 
 /*Kommentarer för PoE*/
 
+.poeh1 {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0px;
+  margin-bottom: 3px;
+  margin-top: 10px;
+}
+
 .poecomment {
   position: relative;
   display: block;
